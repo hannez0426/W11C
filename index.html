@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>POKÉMON BATTLE</h1>
+        <p>Choose your Pokémon and enter the arena!</p>
+    </header>
+
+    <main>
+        <section class="selection">
+            <h2>Choose Your Pokémon</h2>
+
+            <div id="pokemon-container" class="pokemon-grid">
+            </div>
+
+            <a id="resume-btn" class="resume-btn"
+               href="battle.html" hidden>
+                Resume Battle
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pokémon Battle Simulator | JavaScript Project</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
