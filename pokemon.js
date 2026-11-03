@@ -1,6 +1,4 @@
-
 // Pokémon data stored as objects inside an array
-
 const pokemons = [
     {
         id: 1,

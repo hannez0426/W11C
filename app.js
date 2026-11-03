@@ -1,4 +1,3 @@
-
 // Select the Pokémon container
 const pokemonContainer =
     document.getElementById("pokemon-container");
