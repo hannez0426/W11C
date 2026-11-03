@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>POKÉMON BATTLE</h1>
+        <p>Let the battle begin!</p>
+    </header>
+
+    <main>
+        <section class="battle-arena">
+
+            <h2>Battle Arena</h2>
+
+            <div class="battle-grid">
+
+                <!-- Player Pokémon -->
+                <div class="battle-card">
+                    <h3 id="user-name">Your Pokémon</h3>
+
+                    <img id="user-image" alt="Your Pokémon">
+
+                    <p>
+                        HP:
+                        <span id="user-health">100</span>
+                    </p>
+
+                    <div class="health-bar">
+                        <div id="user-health-bar"
+                             class="health-fill"></div>
+                    </div>
+                </div>
+
+                <div class="versus">VS</div>
+
+                <!-- Computer Pokémon -->
+                <div class="battle-card">
+                    <h3 id="computer-name">Enemy Pokémon</h3>
+
+                    <img id="computer-image" alt="Enemy Pokémon">
+
+                    <p>
+                        HP:
+                        <span id="computer-health">100</span>
+                    </p>
+
+                    <div class="health-bar">
+                        <div id="computer-health-bar"
+                             class="health-fill"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Attack options -->
+            <div class="attack-section">
+                <h2>Choose Your Attack</h2>
+
+                <div id="attack-buttons"></div>
+            </div>
+
+            <!-- Battle messages -->
+            <div class="battle-message">
+                <h3>Battle Updates</h3>
+
+                <p id="battle-status" aria-live="polite">
+                    Choose an attack to begin!
+                </p>
+            </div>
+
+            <button id="restart-btn" class="restart-btn">
+                Start New Battle
+            </button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Pokémon Battle Simulator | JavaScript Project</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="battle.js"></script>
+
+</body>
+</html>
